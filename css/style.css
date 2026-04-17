@@ -224,7 +224,7 @@ section {
 }
 
 .top {
-  height: 180px;
+  /* height: 180px; */
   width: 100%;
 }
 
@@ -559,7 +559,7 @@ button,
 }
 
 .header__top_container {
-  height: 88px;
+  height: 60px;
 }
 
 .header__right_buttons {
@@ -4316,7 +4316,7 @@ button,
     margin: 0px 15px 0px 0px;
   }
   .top {
-    height: 130px;
+    /* height: 130px; */
   }
   .header__nav {
     height: calc(var(--height) - 50px);
@@ -4365,11 +4365,6 @@ button,
   .catalog .card__item {
     width: calc(25% - 8px);
   }
-  .catalog__products.active .products__image_block,
-  .catalog__products.active .products__images {
-    width: 240px;
-    height: 220px;
-  }
   .catalog__products.active .products__top {
     gap: 20px;
   }
@@ -4415,9 +4410,6 @@ button,
   .catalog__image_list svg {
     width: 15px;
     height: 15px;
-  }
-  .catalog__products.active .products__price {
-    padding: 0;
   }
   .products__images img {
     padding: 30px 0;
@@ -4629,16 +4621,6 @@ button,
     border: none;
     border-radius: 50%;
   }
-  .header__right_buttons a:hover,
-  .header__right_buttons button:hover {
-    color: var(--accent);
-  
-  }
-  .header__right_buttons a:hover .header__counter,
-  .header__right_buttons button:hover .header__counter {
-    color: var(--bg);
-  
-  }
   .header__counter {
     color: var(--bg);
     top: 0px;
@@ -4665,7 +4647,7 @@ button,
     top: 80px;
   }
   .top {
-    height: 80px;
+   /*  height: 80px; */
   }
   .header__right_buttons .header__burger.active .header__burger_button span:nth-child(3) {
     width: 22px;
@@ -4698,9 +4680,6 @@ button,
   .products__images,
   .products__image_block {
     height: 235px;
-  }
-  .card .card__item {
-    width: calc(33.333% - 7px);
   }
   .card__info {
     padding: 10px 20px;
@@ -4919,9 +4898,6 @@ button,
     font-size: 22px;
     line-height: 24px;
   }
-  .catalog__products.active .products__price {
-    padding: 0;
-  }
   .product__blocks_buttons {
     padding: 0 0 1px;
     overflow-y: hidden;
@@ -5018,7 +4994,7 @@ button,
   .header.active,
   .header__top,
   .top {
-    height: 70px;
+    /* height: 70px; */
   }
   .header__right_buttons a,
   .header__right_buttons button {
@@ -5100,10 +5076,6 @@ button,
   .products__slide::before,
   .products__image.active .products__slide::before {
     background-color: transparent;
-  }
-  .catalog_subsection__top_flex .form__select_box {
-    min-width: 0;
-    flex: 0 1 auto;
   }
   .catalog__products .products__list {
     gap: 10px;
@@ -5273,18 +5245,6 @@ button,
     background-color: var(--bg);
   }
 
-  .header__right_buttons a:hover,
-  .header__right_buttons button:hover {
-    color: var(--accent);
-  
-  }
-
-  .header__right_buttons a:hover .header__counter,
-  .header__right_buttons button:hover .header__counter {
-    color: var(--bg);
-  
-  }
-
   .header__counter {
     color: var(--bg);
   }
@@ -5308,7 +5268,7 @@ button,
   }
 
   .top {
-    height: 120px;
+    /* height: 120px; */
   }
 
   /* Мегаменю: на всю ширину экрана, top: 100% от белой полосы */
