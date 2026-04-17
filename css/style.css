@@ -5266,6 +5266,10 @@ button,
     transition-delay: 0s;
   }
 
+  .header {
+    transition: top 0.2s linear
+  }
+
   .header.active {
     top: -50px;
     transition: top 0.3s linear
