@@ -8,6 +8,7 @@
   --text-font: 'Montserrat', sans-serif;
   --title-font: 'Montserrat', sans-serif;
   --bg: #fff;
+  --bg-counter: rgba(213, 12, 45, 1);
   --text: #1c1717;
   --text-gray: #c5b8b8;
   --text-dgray: #6b6060;
@@ -171,7 +172,7 @@ section {
 
 .container {
   width: 100%;
-  max-width: 1348px;
+  max-width: 1440px;
   padding: 0 60px;
   margin: 0 auto;
   position: relative;
@@ -324,11 +325,12 @@ h4 {
 }
 
 .header__bottom_link {
-  font-family: var(--text-font);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.05em;
+  font-family: "Winston", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0;
   color: var(--text);
 }
 
@@ -487,7 +489,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   min-height: 26px;
   flex-wrap: wrap;
   gap: 6px 14px;
@@ -504,8 +506,11 @@ button,
 }
 
 .header__info_link {
+  font-family: "Winston", sans-serif;
+  font-style: normal;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
   font-weight: 400;
   color: #4a4d5e;
   text-decoration: none;
@@ -557,10 +562,18 @@ button,
   height: 88px;
 }
 
+.header__right_buttons {
+  gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header__top_container,
 .header__left,
 .header__right,
-.header__right_buttons,
 .header__bottom_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,9 +590,7 @@ button,
   gap: 40px;
 }
 
-.header__right_buttons {
-  gap: 7.5px;
-}
+
 
 .header__logo {
   color: var(--text);
@@ -594,31 +605,14 @@ button,
   width: auto;
 }
 
-.header__cart svg {
-  width: 16.27px;
-  height: 18px;
-}
-
-.header__favorites svg {
-  width: 19.35px;
-  height: 18px;
-}
-
-.header__personal svg {
-  width: 16.15px;
-  height: 18px;
-}
 
 .header__right_buttons a,
 .header__right_buttons button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40px;
-  height: 40px;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   color: var(--bg);
   background-color: var(--accent);
   position: relative;
@@ -629,7 +623,7 @@ button,
 .header__right_buttons a:hover,
 .header__right_buttons button:hover {
   color: var(--accent);
-  background-color: var(--border);
+
 }
 
 .header__counter {
@@ -641,11 +635,11 @@ button,
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: -5px;
+  right: -5px;
   text-align: center;
   color: var(--accent);
-  background-color: var(--bg);
+  background-color: var(--bg-counter);
   border-radius: 50%;
   -webkit-transition: background-color .2s linear, color .2s linear;
   transition: background-color .2s linear, color .2s linear;
@@ -654,7 +648,6 @@ button,
 .header__right_buttons a:hover .header__counter,
 .header__right_buttons button:hover .header__counter {
   color: var(--bg);
-  background-color: var(--accent);
 }
 
 .header__top_link {
@@ -4270,7 +4263,6 @@ button,
   p,
   input,
   label,
-  .header__bottom_link,
   .product__information_item p:last-child,
   .cart__button,
   .personal__history_name p {
@@ -4297,17 +4289,14 @@ button,
     top: -80px;
   }
   .header__top_container {
-    height: 80px;
+    height: 60px;
   }
   .header__top_container,
   .header__left,
-  .header__right,
-  .header__right_buttons {
+  .header__right{
     gap: 30px;
   }
-  .header__right_buttons {
-    gap: 7.5px;
-  }
+
   .header__logo img {
     height: 40px;
     width: auto;
@@ -4541,7 +4530,6 @@ button,
   input,
   button,
   label,
-  .header__bottom_link,
   .login__button {
     font-size: 12px;
     line-height: 14px;
@@ -4644,18 +4632,17 @@ button,
   .header__right_buttons a:hover,
   .header__right_buttons button:hover {
     color: var(--accent);
-    background-color: rgba(0, 0, 0, 0.04);
+  
   }
   .header__right_buttons a:hover .header__counter,
   .header__right_buttons button:hover .header__counter {
     color: var(--bg);
-    background-color: var(--accent);
+  
   }
   .header__counter {
     color: var(--bg);
-    background-color: var(--text);
-    top: 4px;
-    right: 4px;
+    top: 0px;
+    right: 0px;
   }
   .header__right_buttons .header__burger {
     width: 40px;
@@ -5003,7 +4990,6 @@ button,
   input,
   button,
   label,
-  .header__bottom_link,
   .personal__history_name p,
   .login__button {
     font-size: 12px;
@@ -5031,7 +5017,6 @@ button,
   .header,
   .header.active,
   .header__top,
-  .header__top_container,
   .top {
     height: 70px;
   }
@@ -5209,8 +5194,8 @@ button,
 /* header desktop: upper strip + main row nav (min 1281px), ~120px total height */
 @media (min-width: 1281px) {
   .header__info > .container {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .header__info_inner {
@@ -5239,7 +5224,6 @@ button,
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 14px;
-    height: 89px;
   }
 
   .header__left {
@@ -5254,7 +5238,7 @@ button,
     width: 100%;
     height: auto;
     justify-content: center;
-    gap: 4px 16px;
+    gap: 4px 22px;
     flex-wrap: wrap;
   }
 
@@ -5270,9 +5254,13 @@ button,
   .header__bottom_link {
     height: auto;
     padding: 4px 0;
-    font-size: 13px;
-    line-height: 16px;
-    color: var(--text-dgray);
+    font-family: "Winston", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: rgba(34, 35, 35, 1);
   }
 
   .header__bottom_item:hover .header__bottom_link {
@@ -5283,57 +5271,35 @@ button,
   .header__right_buttons button {
     color: var(--text);
     background-color: var(--bg);
-    border: 1px solid var(--border);
   }
 
   .header__right_buttons a:hover,
   .header__right_buttons button:hover {
     color: var(--accent);
-    background-color: var(--bg);
-    border-color: var(--accent);
+  
   }
 
   .header__right_buttons a:hover .header__counter,
   .header__right_buttons button:hover .header__counter {
     color: var(--bg);
-    background-color: var(--accent);
+  
   }
 
   .header__counter {
     color: var(--bg);
-    background-color: var(--accent);
   }
 
   .header__logo img {
     height: 42px;
   }
 
-  .header__right_buttons a,
-  .header__right_buttons button {
-    width: 34px;
-    height: 34px;
-  }
 
-  .header__cart svg {
-    width: 14px;
-    height: 15px;
-  }
-
-  .header__favorites svg {
-    width: 17px;
-    height: 16px;
-  }
-
-  .header__personal svg {
-    width: 14px;
-    height: 15px;
-  }
 
   .header__right_buttons .header__counter {
     width: 13px;
     height: 13px;
-    top: 3px;
-    right: 3px;
+    top: -3px;
+    right: -3px;
     font-size: 9px;
   }
 
@@ -5377,7 +5343,7 @@ button,
   }
 
   .header.active {
-    top: -32px;
+    top: -50px;
   }
 
   .header.active .header__bottom_hover {
