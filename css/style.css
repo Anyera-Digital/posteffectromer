@@ -224,7 +224,7 @@ section {
 }
 
 .top {
-  /* height: 180px; */
+  height: 110px;
   width: 100%;
 }
 
@@ -549,7 +549,6 @@ button,
 
 .header.active {
   position: fixed;
-  top: -110px;
   left: 0;
 }
 
@@ -4600,6 +4599,11 @@ button,
     top: 60px;
   }
 
+  .top {
+    height: 60px;
+    width: 100%;
+  }
+
 
   .hero__swiper,
   .hero__item,
@@ -4939,13 +4943,7 @@ button,
     padding-right: 20px;
   }
   
-  .header__bottom_link,
-  .header,
-  .header.active,
-  .header__top,
-  .top {
-    /* height: 70px; */
-  }
+  
   .header__right_buttons a,
   .header__right_buttons button {
     width: 36px;
@@ -5278,6 +5276,8 @@ button,
   .header.active .header__bottom_hover {
     max-height: calc(var(--height) - 89px);
   }
+
+  
 }
 
 /* Подкаталог: сортировка слева, «Фильтры» у правого края контейнера (перебивает min-width у select) */
